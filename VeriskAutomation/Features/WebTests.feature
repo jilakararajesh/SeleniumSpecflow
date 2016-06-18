@@ -34,7 +34,6 @@ Examples:
 | Reviewer  |
 | Author    |
 
-@my search
 Scenario Outline: verifying select operation
 Given I Navigate to login page
 When I log in with "<UserType>" user
