@@ -117,20 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Admin_Password" xml:space="preserve">
+    <value>@123</value>
+  </data>
+  <data name="Admin_UserName" xml:space="preserve">
+    <value>stangudu</value>
+  </data>
   <data name="Author_Password" xml:space="preserve">
-    <value>Verisk@123</value>
+    <value>@123</value>
   </data>
   <data name="Author_UserName" xml:space="preserve">
     <value>sjohn</value>
   </data>
-  <data name="ISO_Admin_Password" xml:space="preserve">
-    <value>Verisk@123</value>
-  </data>
-  <data name="ISO_Admin_UserName" xml:space="preserve">
-    <value>stangudu</value>
-  </data>
   <data name="Reviewer_Password" xml:space="preserve">
-    <value>Verisk@123</value>
+    <value>@123</value>
   </data>
   <data name="Reviewer_UserName" xml:space="preserve">
     <value>jrani</value>

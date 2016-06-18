@@ -61,7 +61,25 @@ namespace VeriskAutomation.TestDataSet {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verisk@123.
+        ///   Looks up a localized string similar to @123.
+        /// </summary>
+        internal static string Admin_Password {
+            get {
+                return ResourceManager.GetString("Admin_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to stangudu.
+        /// </summary>
+        internal static string Admin_UserName {
+            get {
+                return ResourceManager.GetString("Admin_UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @123.
         /// </summary>
         internal static string Author_Password {
             get {
@@ -79,25 +97,7 @@ namespace VeriskAutomation.TestDataSet {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verisk@123.
-        /// </summary>
-        internal static string ISO_Admin_Password {
-            get {
-                return ResourceManager.GetString("ISO_Admin_Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to stangudu.
-        /// </summary>
-        internal static string ISO_Admin_UserName {
-            get {
-                return ResourceManager.GetString("ISO_Admin_UserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Verisk@123.
+        ///   Looks up a localized string similar to @123.
         /// </summary>
         internal static string Reviewer_Password {
             get {
