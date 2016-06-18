@@ -274,15 +274,15 @@ testRunner.And("I select form by form Number and verify Action menu options", ((
         public virtual void VerifyingSelectCheckBoxOperation2()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verifying select check box operation2", ((string[])(null)));
-#line 61
-this.ScenarioSetup(scenarioInfo);
 #line 62
-testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 63
-testRunner.When("I log in with Admin user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 64
-testRunner.And("I Select \"Propritery\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.When("I log in with Admin user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 65
+testRunner.And("I Select \"Propritery\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 66
 testRunner.When("selcting \"AG\" in \"Line of Business\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
