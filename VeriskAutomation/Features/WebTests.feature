@@ -1,9 +1,5 @@
 ﻿Feature: WebTests
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
 
-@mytag
 Scenario Outline: verify log in 
 Given I Navigate to login page
 When I log in with <UserType>
@@ -23,7 +19,6 @@ Examples:
 | Admin |
 
 
-@mytag
 Scenario Outline: Search Login Operation
 Given I Navigate to login page
 When I log in with <UserType>
@@ -62,6 +57,8 @@ And I select form by form Number and verify Action menu options
 | FormNumber     |
 | IL 12 08 11 12 |
 | IL 09 85 01 08 |
+
+
 Scenario: verifying select check box operation2
 Given I Navigate to login page
 When I log in with Admin user

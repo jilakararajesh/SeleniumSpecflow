@@ -31,8 +31,7 @@ namespace VeriskAutomation.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "WebTests", "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of t" +
-                    "wo numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "WebTests", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -71,20 +70,14 @@ namespace VeriskAutomation.Features
         
         public virtual void VerifyLogIn(string userType, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "mytag"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify log in", @__tags);
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify log in", exampleTags);
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 4
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 5
 testRunner.When(string.Format("I log in with {0}", userType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
+#line 6
 testRunner.Then("The User should be logged in successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -93,7 +86,6 @@ testRunner.Then("The User should be logged in successfully", ((string)(null)), (
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("verify log in")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Admin")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Admin")]
         public virtual void VerifyLogIn_Admin()
@@ -104,7 +96,6 @@ testRunner.Then("The User should be logged in successfully", ((string)(null)), (
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("verify log in")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Reviewer")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Reviewer")]
         public virtual void VerifyLogIn_Reviewer()
@@ -115,7 +106,6 @@ testRunner.Then("The User should be logged in successfully", ((string)(null)), (
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("verify log in")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Author")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Author")]
         public virtual void VerifyLogIn_Author()
@@ -126,13 +116,13 @@ testRunner.Then("The User should be logged in successfully", ((string)(null)), (
         public virtual void VerifySearchOperation(string userType, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify search operation", exampleTags);
-#line 17
+#line 13
 this.ScenarioSetup(scenarioInfo);
-#line 18
+#line 14
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
+#line 15
 testRunner.When(string.Format("I log in with {0}", userType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
+#line 16
 testRunner.Then("search page should diaplay successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -150,20 +140,14 @@ testRunner.Then("search page should diaplay successfully", ((string)(null)), ((T
         
         public virtual void SearchLoginOperation(string userType, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "mytag"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Login Operation", @__tags);
-#line 27
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Login Operation", exampleTags);
+#line 22
 this.ScenarioSetup(scenarioInfo);
-#line 28
+#line 23
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
+#line 24
 testRunner.When(string.Format("I log in with {0}", userType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 30
+#line 25
 testRunner.Then("I verified the result", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -172,7 +156,6 @@ testRunner.Then("I verified the result", ((string)(null)), ((TechTalk.SpecFlow.T
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Search Login Operation")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Admin")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Admin")]
         public virtual void SearchLoginOperation_Admin()
@@ -183,7 +166,6 @@ testRunner.Then("I verified the result", ((string)(null)), ((TechTalk.SpecFlow.T
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Search Login Operation")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Reviewer")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Reviewer")]
         public virtual void SearchLoginOperation_Reviewer()
@@ -194,7 +176,6 @@ testRunner.Then("I verified the result", ((string)(null)), ((TechTalk.SpecFlow.T
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Search Login Operation")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "WebTests")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Author")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserType", "Author")]
         public virtual void SearchLoginOperation_Author()
@@ -205,17 +186,17 @@ testRunner.Then("I verified the result", ((string)(null)), ((TechTalk.SpecFlow.T
         public virtual void VerifyingSelectOperation(string userType, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verifying select operation", exampleTags);
-#line 37
+#line 32
 this.ScenarioSetup(scenarioInfo);
-#line 38
+#line 33
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 39
+#line 34
 testRunner.When(string.Format("I log in with \"{0}\" user", userType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 40
+#line 35
 testRunner.And("I perform \"Self\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
+#line 36
 testRunner.And("I click View Info icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
+#line 37
 testRunner.Then("View Info is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -237,13 +218,13 @@ testRunner.Then("View Info is displayed", ((string)(null)), ((TechTalk.SpecFlow.
         public virtual void VerifyingSelectCheckBoxOperation()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verifying select check box operation", ((string[])(null)));
-#line 47
+#line 42
 this.ScenarioSetup(scenarioInfo);
-#line 48
+#line 43
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 49
+#line 44
 testRunner.When("I log in with ISO_Admin user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 50
+#line 45
 testRunner.And("I perform \"Self\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -252,9 +233,9 @@ testRunner.And("I perform \"Self\" forms Search", ((string)(null)), ((TechTalk.S
                         "IL 12 08 11 12"});
             table1.AddRow(new string[] {
                         "IL 09 85 01 08"});
-#line 51
+#line 46
 testRunner.And("I select form by form Number", ((string)(null)), table1, "And ");
-#line 55
+#line 50
 testRunner.Then("Action menu is enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -266,13 +247,13 @@ testRunner.Then("Action menu is enabled", ((string)(null)), ((TechTalk.SpecFlow.
         public virtual void VerifyingSelectCheckBoxOperation1()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verifying select check box operation1", ((string[])(null)));
-#line 57
+#line 52
 this.ScenarioSetup(scenarioInfo);
-#line 58
+#line 53
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 59
+#line 54
 testRunner.When("I log in with Admin user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 60
+#line 55
 testRunner.And("I perform \"Self\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -281,7 +262,7 @@ testRunner.And("I perform \"Self\" forms Search", ((string)(null)), ((TechTalk.S
                         "IL 12 08 11 12"});
             table2.AddRow(new string[] {
                         "IL 09 85 01 08"});
-#line 61
+#line 56
 testRunner.And("I select form by form Number and verify Action menu options", ((string)(null)), table2, "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -293,15 +274,15 @@ testRunner.And("I select form by form Number and verify Action menu options", ((
         public virtual void VerifyingSelectCheckBoxOperation2()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verifying select check box operation2", ((string[])(null)));
-#line 65
+#line 62
 this.ScenarioSetup(scenarioInfo);
-#line 66
+#line 63
 testRunner.Given("I Navigate to login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 67
+#line 64
 testRunner.When("I log in with Admin user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 68
+#line 65
 testRunner.And("I Select \"Propritery\" forms Search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 69
+#line 66
 testRunner.When("selcting \"AG\" in \"Line of Business\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
