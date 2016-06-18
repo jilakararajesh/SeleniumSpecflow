@@ -22,9 +22,9 @@ namespace VeriskAutomation.Pages
         {
             switch (userType)
             {
-                case "ISO_Admin":
-                    WebFixtures.Driver.FindElement(By.Id(UIControl.UserNameTextBox)).SendKeys(TestData.ISO_Admin_UserName);
-                    WebFixtures.Driver.FindElement(By.Id(UIControl.PasswordTextBox)).SendKeys(TestData.ISO_Admin_Password);
+                case "Admin":
+                    WebFixtures.Driver.FindElement(By.Id(UIControl.UserNameTextBox)).SendKeys(TestData.Admin_UserName);
+                    WebFixtures.Driver.FindElement(By.Id(UIControl.PasswordTextBox)).SendKeys(TestData.Admin_Password);
 
                     break;
                 case "Reviewer":
